@@ -12,4 +12,26 @@ const tempo = 10;
 
  const divTempo = document.querySelector('.tempo')
 
- divTempo.innerHTML = tempo
+ divTempo.innerHTML = `mancano ${tempo} secondi `
+
+ const funzioneCronometro;
+
+ const cronometro = setInterval( funzioneCronometro , 1000 )
+
+ function funzioneCronometro(){
+    tempo--
+    divTempo.innerHTML = tempo
+ }
+
+ 
+     
+    
+
+ 
+    
+    
+
+ 
+    
+
+    
