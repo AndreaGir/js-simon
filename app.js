@@ -48,18 +48,22 @@ let tempo = 2;
     if(tempo === 0){
         clearInterval( cronometro )
         divTempo.innerHTML = 'Tempo terminato!'
-        
+    }
 
-        for(let i = 0; i < numeriGioco.length; i++){
-            numeriUtente =  prompt('Ora scrvimi i numeri che ti ho fatto vedere prima')
-        }   
-        
-        
+    for(let i = 0; i < numeriGioco.length; i++){
+        numeriUtente =  prompt('Ora scrvimi i numeri che ti ho fatto vedere prima')
 
         
     }
+    if(numeriGioco.includes(numeriUtente)){
+        numeriScritti.push(numeriUtente)
+    }
+    console.log(numeriGioco ,numeriScritti)
+    
+    
+       
+   
  }
-ray
 
     
 
